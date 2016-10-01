@@ -77,14 +77,14 @@ There's a lot of stuff that requires admin access via `sudo`, so be warned that 
 To keep things easy, the `~/.bashrc` and `~/.bash_profile` files are extremely simple, and should never need to be modified. Instead, add your aliases, functions, settings, etc into one of the files in the `source` subdirectory, or add a new file. They're all automatically sourced when a new shell is opened. Take a look, I have [a lot of aliases and functions](source). I even have a [fancy prompt](source/50_prompt.sh) that shows the current directory, time and current git/svn repo status.
 
 ## Scripts
-In addition to the aforementioned [dotfiles][dotfiles] script, there are a few other [bin scripts](bin). This includes [nave](https://github.com/isaacs/nave), which is a [git submodule](vendor).
+In addition to the aforementioned [dotfiles][dotfiles] script, there are a few other [bin scripts](bin).
 
 * [dotfiles][dotfiles] - (re)initialize dotfiles. It might ask for your password (for `sudo`).
 * [src](link/.bashrc#L8-18) - (re)source all files in `/source` directory
 * Look through the [bin](bin) subdirectory for a few more.
 
 ## Prompt
-I think [my bash prompt](source/50_prompt.sh) is awesome. It shows git and svn repo status, a timestamp, error exit codes, and even changes color depending on how you've logged in.
+[Here is the prompt]](source/50_prompt.sh). It shows git repo status, a timestamp, error exit codes, and even changes color depending on how you've logged in.
 
 Git repos display as **[branch:flags]** where flags are:
 
@@ -92,14 +92,7 @@ Git repos display as **[branch:flags]** where flags are:
 **!** changed (but unstaged) files  
 **+** staged files
 
-SVN repos display as **[rev1:rev2]** where rev1 and rev2 are:
 
-**rev1** last changed revision  
-**rev2** revision
-
-Check it out:
-
-![My awesome bash prompt](http://farm8.staticflickr.com/7142/6754488927_563dd73553_b.jpg)
 
 ## Inspiration
 <https://github.com/cowboy/dotfiles.git>
