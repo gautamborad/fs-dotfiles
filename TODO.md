@@ -1,2 +1,3 @@
 - How to manage ~/.ssh/config file
 - Auto update the fs-dotfiles
+- Integrate some osx defaults (for eg. : https://github.com/hjuutilainen/dotfiles/blob/master/bin/osx-user-defaults.sh)

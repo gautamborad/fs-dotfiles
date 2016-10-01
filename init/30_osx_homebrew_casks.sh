@@ -7,7 +7,16 @@ is_osx || return 1
 # Ensure the cask keg and recipe are installed.
 kegs=(caskroom/cask)
 brew_tap_kegs
-recipes=(brew-cask)
+recipes=(
+  brew-cask
+  tree
+  moreutils
+  findutils
+  gnu-sed
+  bash
+  wget
+  vim
+)
 brew_install_recipes
 
 # Exit if, for some reason, cask is not installed.
@@ -38,4 +47,3 @@ if (( ${#casks[@]} > 0 )); then
   done
   brew cask cleanup
 fi
-
