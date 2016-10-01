@@ -11,6 +11,8 @@ recipes=(
   bash
   cowsay
   git
+  git-extras
+  postgres
   htop-osx
   ssh-copy-id
   the_silver_searcher
