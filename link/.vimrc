@@ -34,12 +34,13 @@ autocmd vimrc ColorScheme * :hi link multiple_cursors_visual Visual
 let g:molokai_italic=0
 colorscheme molokai
 set background=dark
+set encoding=utf-8
 
 " Visual settings
 set cursorline " Highlight current line
 set number " Enable line numbers.
-set showtabline=2 " Always show tab bar.
-set relativenumber " Use relative line numbers. Current line is still in status bar.
+"set showtabline=2 " Always show tab bar.
+"set relativenumber " Use relative line numbers. Current line is still in status bar.
 set title " Show the filename in the window titlebar.
 set nowrap " Do not wrap lines.
 set noshowmode " Don't show the current mode (airline.vim takes care of us)
@@ -69,11 +70,11 @@ set expandtab " Expand tabs to spaces
 set nojoinspaces " Only insert single space after a '.', '?' and '!' with a join command.
 
 " Toggle show tabs and trailing spaces (,c)
-if has('win32')
-  set listchars=tab:>\ ,trail:.,eol:$,nbsp:_,extends:>,precedes:<
-else
-  set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:>,precedes:<
-endif
+"if has('win32')
+"  set listchars=tab:>\ ,trail:.,eol:$,nbsp:_,extends:>,precedes:<
+"else
+"  set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_,extends:>,precedes:<
+"endif
 "set listchars=tab:>\ ,trail:.,eol:$,nbsp:_,extends:>,precedes:<
 "set fillchars=fold:-
 nnoremap <silent> <leader>v :call ToggleInvisibles()<CR>
@@ -203,10 +204,10 @@ autocmd vimrc BufRead,BufNewFile *.md set filetype=markdown
 " PLUGINS
 
 " Airline
-let g:airline_powerline_fonts = 1 " TODO: detect this?
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_format = '%s '
-let g:airline#extensions#tabline#buffer_nr_show = 1
+"let g:airline_powerline_fonts = 1 " TODO: detect this?
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#buffer_nr_format = '%s '
+"let g:airline#extensions#tabline#buffer_nr_show = 1
 "let g:airline#extensions#tabline#fnamecollapse = 0
 "let g:airline#extensions#tabline#fnamemod = ':t'
 
@@ -246,6 +247,7 @@ let g:mustache_abbreviations = 1
 " Reload .vimrc and :PlugInstall to install plugins.
 call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
