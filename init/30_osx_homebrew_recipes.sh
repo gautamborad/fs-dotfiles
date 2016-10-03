@@ -18,6 +18,10 @@ recipes=(
   the_silver_searcher
   tree
   wget
+  maven
+  zsh
+  zsh-completions
+  node
 )
 
 brew_install_recipes
