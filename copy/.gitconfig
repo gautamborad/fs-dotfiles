@@ -1,6 +1,6 @@
 [user]
-  name = Ben Alman
-  email = EMAIL
+  name = ENTER_YOUR_FULL_NAME_HERE
+  email = ENTER_YOUR_EMAIL_HERE
 [core]
   autocrlf = input
   whitespace = fix,space-before-tab,tab-in-indent,trailing-space
@@ -12,7 +12,7 @@
 [alias]
 
   # short aliases
-  st = status 
+  st = status
   co = checkout
 
   # pull/push
